@@ -1,0 +1,61 @@
+Final Deployment Checklist
+=========================
+
+1. File Replacements:
+   - [ ] Rename frmClientes_NEW.cs → frmClientes.cs
+   - [ ] Rename frmProductos_NEW.cs → frmProductos.cs
+   - [ ] Rename frmFacturas_NEW.cs → frmFacturas.cs
+   - [ ] Rename frmMain_NEW.cs → frmMain.cs
+   - [ ] Rename Program_NEW.cs → Program.cs
+
+2. Project File Updates:
+   - [ ] Verify entry point is set to Program.Main()
+   - [ ] Check all form dependencies in .csproj
+
+3. Pre-Deployment Testing:
+   - [ ] Authentication and authorization flows
+   - [ ] Client management operations
+   - [ ] Product management operations
+   - [ ] Invoice creation and processing
+   - [ ] Report generation
+   - [ ] Backup functionality
+
+4. Post-Deployment Verification:
+   - [ ] Smoke test all main menu options
+   - [ ] Verify database operations
+   - [ ] Check PDF generation
+   - [ ] Test role-based access controls
+
+5. Backup Plan:
+   - [ ] Create backup of original files
+   - [ ] Document rollback procedure
+   - [ ] Prepare database backup script
+
+Testing Guidelines
+==================
+
+1. Authentication Tests:
+   - Verify login with valid/invalid credentials
+   - Test password change functionality
+   - Verify session timeout handling
+
+2. Functional Tests:
+   - Create/read/update/delete clients
+   - Manage product inventory
+   - Generate and print invoices
+   - Run sales reports
+
+3. Security Tests:
+   - Verify role-based menu items
+   - Test unauthorized access attempts
+   - Check audit logging
+
+4. Performance Tests:
+   - Load testing with large datasets
+   - PDF generation speed
+   - Report generation with date ranges
+
+5. User Acceptance:
+   - Key user walkthrough
+   - Validate UI consistency
+   - Confirm business requirements met
